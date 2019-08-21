@@ -18,7 +18,7 @@ import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/rea
 const User = props => (
   <tr>
     <td>{props.user.username}</td>
-    <td id="mobileHiddenItem">{props.user.email}</td> 
+    <td id="mobileHiddenItem">{props.user.email}</td>
     <td id="mobileHiddenItem">{props.user.tel}</td>
     <td id="mobileHiddenItem">{props.user.address}</td>
     <td><button class="btn-dark"><Link to={"/show/"+props.user._id}><FontAwesomeIcon icon={faEye} size="sm"/></Link></button>
@@ -60,37 +60,46 @@ export default class Home extends Component{
     return (
     <body>
         <div class="pos-f-t">
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuário" aria-label="Pesquisar" />
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                  <FontAwesomeIcon icon={faSearch} size="sm"/>
-                </button>
-              </form>
-            </div>
-          </div>
           <nav class="navbar navbar-dark bg-dark sticky-to p">
-            <a class="navbar-brand" href="#">Gerenciador de Usuários</a> 
-            <form class="form-inline" id="mobileHiddenItem">
-              <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuário" aria-label="Pesquisar" />
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                <FontAwesomeIcon icon={faSearch} size="sm"/>
-              </button>
+            <a class="navbar-brand" href="#">Gerenciador de Usuários</a>
+            <form class="form-inline"  id="mobileHiddenItem">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                      <FontAwesomeIcon icon={faSearch} size="sm"/>
+                    </button>
+                  </div>
+                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuário" aria-label="Pesquisar" />
+                </div>
+              </div>
+
             </form>
-            <button class="navbar-toggler" id="navbarBtn" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-              <span class="navbar-toggler-icon"></span>
-            </button>
           </nav>
         </div>
 
         <container>
           <div class="rTable">
+
+          <form class="form-inline" id="mobileShowItem">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">
+                      <FontAwesomeIcon icon={faSearch} size="sm"/>
+                    </button>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Buscar usuário" aria-label="Pesquisar" />
+                </div>
+              </div>
+
+            </form>
+
             <table class="table table-striped shadow-sm">
               <thead class="thead-dark">
                 <tr>
                   <th>Nome</th>
-                  <th id="mobileHiddenItem">Email</th> 
+                  <th id="mobileHiddenItem">Email</th>
                   <th id="mobileHiddenItem">Telefone</th>
                   <th id="mobileHiddenItem">Endereço</th>
                   <th>Ação</th>
@@ -99,7 +108,7 @@ export default class Home extends Component{
               <tbody>
                 { this.userList() }
               </tbody>
-            </table>  
+            </table>
           </div>
         </container>
 
