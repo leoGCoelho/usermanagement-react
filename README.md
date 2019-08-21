@@ -17,16 +17,17 @@ O sistema programado em **React.js** e **Node.js**, utiliza um cluster **MongoDB
 
 ### React.js
 A aplicação consiste em 4 paginas:
-  - Home, que é a pagina principal contendo uma listagem com todos usuários armazenados no sistema, possuindo também função de exclução de usuários;
-  - Criação de novos usuários;
+  - Home contendo uma listagem com todos usuários armazenados no sistema, possuindo também função de exclução de usuários;
+  - Cadastro de novos usuários;
   - Edição de dados de usuário;
   - Visualização dos dados de um usuário específico;
   
  ### Node.js
  O gerenciador conta com um modelo principal (User), no qual foi atribuído os metodos:
-  - **GET /user :** Atribuido a listagem;
-  - **GET /user/:id :** Atribuido à visualização específica e edição (mostrar dados antigos);
-  - **PUT /user/:id :** Atribuido à edição (armazenamento no BD);
-  - **DELETE /user/:id :** Atribuido à exclusão do usuário;
+  - **GET /user :** Atribuído a listagem;
+  - **GET /user/:id :** Atribuído a visualização específica e edição (mostrar dados antigos);
+  - **POST /user :** Atribuído ao cadastro de usuário;
+  - **PUT /user/:id :** Atribuído a edição (armazenamento no BD);
+  - **DELETE /user/:id :** Atribuído a exclusão do usuário;
   
  O cadastro de um usuário consiste no armazenamento do seu **nome**, **email**, **telefone** e **endereço**, sendo os dados verificados ao envio do formulário e, caso o número de caracteres for muito curto, o algum dado for duplicado de tabelas antigas ou algum outro erro, uma excessão será ativada e gerará um log, além de nao armazenar o dado enviado.
