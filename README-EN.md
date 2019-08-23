@@ -1,5 +1,5 @@
 # UserManager-React_Node.js
-**EN-US** | <a href="https://github.com/leoGCoelho/usermanagement-react/edit/master/README.md">PT-BR</a>
+**EN-US** | <a href="https://github.com/leoGCoelho/usermanagement-react/blob/master/README.md">PT-BR</a>
 
 ## Modules Used
   - express
