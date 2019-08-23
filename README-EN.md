@@ -1,14 +1,16 @@
 # UserManager-React_Node.js
+**EN-US** | <a href="https://github.com/leoGCoelho/usermanagement-react/edit/master/README.md">PT-BR</a>
+
 ## Modules Used
-  - express
+  - express
   - mongoose
-  - cors
-  - nodemon
-  - dotenv
-  - axios
-  - react-router-dom
-  - bootstrap
-  - FontAwesomeIcon
+  - cors
+  - nodemon
+  - dotenv
+  - axios
+  - react-router-dom
+  - bootstrap
+  - FontAwesomeIcon
 
 ## Implementation Info
 
