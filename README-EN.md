@@ -1,7 +1,7 @@
 # UserManager-React_Node.js
 ## Modules Used
   - express
-  - mongoose
+  - mongoose
   - cors
   - nodemon
   - dotenv
