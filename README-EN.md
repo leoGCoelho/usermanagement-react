@@ -31,5 +31,5 @@ The application consists of 4 pages:
   - **POST /user:** Assigned to user registration;
   - **PUT /user/: id:** Assigned to editing (storage in DB);
   - **DELETE /user/: id:** Assigned to user deletion;
-  
- The registration of a user consists of the storage of his **name**, **email**, **telephone** and **address**, the data being verified upon submission of the form and, if the number of characters is too short, some data is duplicated from old tables or some other error, an exception will be thrown and will generate a log, and will not store the sent data.
+  
+  The registration of a user consists of the storage of his **name**, **email**, **telephone** and **address**, the data being verified upon submission of the form and, if the number of characters is too short, some data is duplicated from old tables or some other error, an exception will be thrown and will generate a log, and will not store the sent data.
