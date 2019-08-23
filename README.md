@@ -1,4 +1,6 @@
 # UserManager-React_NodeJS
+**PT-BR** | <a href="https://github.com/leoGCoelho/usermanagement-react/blob/master/README-EN.md">EN-US</a>
+
 ## Modulos utilizados
   - express
   - mongoose
