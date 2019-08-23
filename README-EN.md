@@ -23,9 +23,9 @@ The application consists of 4 pages:
   - Registering users;
   - Editing user data;
   - Viewing of data of a specific user;
-  
- ### Node.js
- The manager has a main model (User), which has been assigned the methods:
+  
+### Node.js
+The manager has a main model (User), which has been assigned the methods:
   - **GET /user:** Assigned to listing;
   - **GET /user/: id:** Assigned to specific view and edit (show old data);
   - **POST /user:** Assigned to user registration;
